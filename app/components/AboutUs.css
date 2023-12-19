@@ -1,0 +1,10 @@
+/* YourComponent.css (or in your global styles) */
+.my-button {
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-button:hover {
+    background-color: #ffffff; /* Change to your desired hover color */
+    color: #000;
+  }
+  
