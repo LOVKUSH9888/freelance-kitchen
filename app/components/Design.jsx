@@ -9,7 +9,7 @@ const Design = () => {
         <div className="container">
           <div className="row">
             <div className="col-4">
-              <h2>Design</h2>
+              <h2><b>Design</b></h2>
             </div>
             <div className="col-8">
               <p>

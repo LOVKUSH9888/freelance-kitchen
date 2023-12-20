@@ -27,7 +27,7 @@ const Values = () => {
               </div> */}
             </div>
             <div className="col-md-6">
-              <h2>Our Core Values</h2>
+              <h2><b>Our Core Values</b></h2>
               <p>
                 <b>Excellence:</b> We are committed to delivering excellence in every
                 aspect of our work, from design and sales to installation and

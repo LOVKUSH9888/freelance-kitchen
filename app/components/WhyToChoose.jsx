@@ -7,7 +7,7 @@ const WhyToChoose = () => {
         <div className="container">
           <div className="row">
             <div className="col-4">
-              <h2>Why Choose US?</h2>
+              <h2><b>Why Choose US?</b></h2>
             </div>
             <div className="col-8">
               <p>

@@ -7,7 +7,7 @@ const Services = () => {
     <>
       <div className="container p-5 ">
         <div className="row ">
-          <h1>Services</h1>
+          <h1 className="border-bottom border-dark border-5"><b>Services</b></h1>
           <div id="cards_landscape_wrap-2">
             <div className="container">
               <div className="row">
@@ -19,7 +19,7 @@ const Services = () => {
                         <div className="image-box">
                           <Image
                             className="img-fluid"
-                            src="/asset4.png"
+                            src="/asset12.webp"
                             width={500}
                             height={500}
                           />
@@ -44,7 +44,7 @@ const Services = () => {
                         <div className="image-box">
                           <Image
                             className="img-fluid"
-                            src="/asset4.png"
+                            src="/asset13.webp"
                             width={500}
                             height={500}
                           />
@@ -55,7 +55,7 @@ const Services = () => {
                           </h6>
                           <p>
                             We provide a full supply service, with a wide range
-                            of products to choose from to suit your needs.
+                            of products to suit your needs.
                           </p>
                         </div>
                       </div>
@@ -71,7 +71,7 @@ const Services = () => {
                         <div className="image-box">
                           <Image
                             className="img-fluid"
-                            src="/asset4.png"
+                            src="/asset15.webp"
                             width={500}
                             height={500}
                           />
@@ -97,7 +97,7 @@ const Services = () => {
                         <div className="image-box">
                           <Image
                             className="img-fluid"
-                            src="/asset4.png"
+                            src="/asset1.webp"
                             width={500}
                             height={500}
                           />

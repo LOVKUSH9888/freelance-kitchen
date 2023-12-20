@@ -7,7 +7,7 @@ const ContactUs = () => {
         <div className="row">
           {/* Contact Form (col-6) */}
           <div className="col-lg-6">
-            <h2>Contact Us</h2>
+            <h2><b>Contact Us</b></h2>
             <form>
               {/* Your contact form fields go here */}
               <div className="mb-3">
@@ -40,10 +40,10 @@ const ContactUs = () => {
 
           {/* Google Maps Iframe (col-6) */}
           <div className="col-lg-6">
-            <h2>Our Location</h2>
+            <h2><b>Our Location</b></h2>
             {/* Replace the iframe src attribute with your Google Maps embed code */}
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.9372057283674!2d-122.41941638465351!3d37.77492977975442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e077e05a9f7%3A0x1a6a7d63e49ac9!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1626330049156!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.2439843482903!2d149.18031397468343!3d-21.14268648053524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bdbd3f70bb3a4c5%3A0x26fd4965025eaeef!2sSuite%202B%2F52%20MacAlister%20St%2C%20Mackay%20QLD%204740%2C%20Australia!5e0!3m2!1sen!2sin!4v1703069814470!5m2!1sen!2sin"
               width="100%"
               height="450"
               style={{ border: 0 }}

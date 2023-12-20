@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div className="container">
           <div className="row">
             <div className="col-4 animate-left">
-              <h2>About Us</h2>
+              <h2><b>About Us</b></h2>
             </div>
             <div className="col-8 animate-right">
               <h3>With Us, Nothing’s Off The Menu.</h3>
