@@ -10,11 +10,11 @@ const AboutUs = () => {
               <h2><b>About Us</b></h2>
             </div>
             <div className="col-8 animate-right">
-              <h3>With Us, Nothing’s Off The Menu.</h3>
+              <h3>With Us, Nothing Off The Menu.</h3>
               <p>
-                We all love FOOD. The phrase ‘Delicious FOOD’ is enough to
+                We all love FOOD. The phrase Delicious FOOD is enough to
                 connect us to this industry of Commercial Kitchen. We Design
-                Commercial Kitchen Equipment’s and undertake complete
+                Commercial Kitchen Equipment and undertake complete
                 commissioning and setup of Commercial Kitchens for hotels,
                 restaurants, hospitals, food courts, educational institutions,
                 industrial canteens, take away joints, bar, lounges, cafes and
@@ -28,7 +28,7 @@ const AboutUs = () => {
                 the latest Computer Aided Design Systems to give you a flawless
                 product. We continuously work with our customers to give the
                 best possible products and the best price possible in different
-                regions in India. We don't just sell products... We service our
+                regions in India. We dont just sell products... We service our
                 customers!
               </p>
               <button className="btn btn-danger border border-danger my-button">Read More</button>

@@ -6,8 +6,8 @@ const WhatWeDo = () => {
   return (
     <div className="container">
       <div className="row">
-      <h1 className=""><b>What We Do?</b></h1>
-        <h3 className="border-bottom border-dark border-5 p-1"><b>From Design To Installation</b></h3>
+      <h1 className="border-bottom border-dark border-5 p-1"><b>What We Do?</b></h1>
+        <h3 className=""><b>From Design To Installation</b></h3>
         {/* Cards */}
         <div id="cards_landscape_wrap-2">
           <div className="container">
@@ -22,6 +22,7 @@ const WhatWeDo = () => {
                           src="/asset5.webp"
                           width="500"
                           height="500"
+                          alt="Image"
                         />
                       </div>
                       <div className="text-container">
@@ -41,6 +42,7 @@ const WhatWeDo = () => {
                           src="/asset8.webp"
                           width="500"
                           height="500"
+                          alt="Image"
                         />
                       </div>
                       <div className="text-container">
@@ -60,6 +62,7 @@ const WhatWeDo = () => {
                           src="/asset7.webp"
                           width="500"
                           height="500"
+                          alt="Image"
                         />
                       </div>
                       <div className="text-container">
@@ -79,10 +82,11 @@ const WhatWeDo = () => {
                           src="/asset6.webp"
                           width="500"
                           height="500"
+                          alt="Image"
                         />
                       </div>
                       <div className="text-container">
-                        <h6>MANFACTURING SERVICES & MAINTAINANCE</h6>
+                        <h6>MANFACTURING & MAINTAINANCE</h6>
                       </div>
                     </div>
                   </div>

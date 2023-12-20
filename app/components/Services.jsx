@@ -22,12 +22,13 @@ const Services = () => {
                             src="/asset12.webp"
                             width={500}
                             height={500}
+                            alt="Image"
                           />
                         </div>
                         <div className="text-container flex-grow-1">
                           <h6>Commercial Kitchen, Ventilation & Bar Design</h6>
                           <p>
-                            Our highly experienced designers can work with you
+                            Our highly experienced designers & engineers can work with you
                             to create your brief.
                           </p>
                         </div>
@@ -47,6 +48,7 @@ const Services = () => {
                             src="/asset13.webp"
                             width={500}
                             height={500}
+                            alt="Image"
                           />
                         </div>
                         <div className="text-container flex-grow-1">
@@ -74,6 +76,7 @@ const Services = () => {
                             src="/asset15.webp"
                             width={500}
                             height={500}
+                            alt="Image"
                           />
                         </div>
                         <div className="text-container flex-grow-1">
@@ -100,6 +103,7 @@ const Services = () => {
                             src="/asset1.webp"
                             width={500}
                             height={500}
+                            alt="Image"
                           />
                         </div>
                         <div className="text-container flex-grow-1">

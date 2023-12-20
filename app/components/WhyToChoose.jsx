@@ -18,14 +18,14 @@ const WhyToChoose = () => {
               </p>
 
               <p>
-                <b>Unique Solutions:</b> We don't believe in one-size-fits-all
+                <b>Unique Solutions:</b> We dont believe in one-size-fits-all
                 solutions. Our team thrives on creating bespoke, tailor-made
                 solutions that elevate your kitchen and hospitality spaces to
                 new heights.
               </p>
               <p>
                 <b>Passion for Perfection:</b> Our passion for perfection is evident in
-                every project we undertake. We don't just build kitchens; we
+                every project we undertake. We dont just build kitchens; we
                 create environments that inspire culinary excellence.
               </p>
             </div>
