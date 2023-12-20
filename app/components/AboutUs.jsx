@@ -1,15 +1,15 @@
 import React from "react";
-
+import "./AboutUs"
 const AboutUs = () => {
   return (
     <>
       <div className="bg-dark text-white p-5">
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-4 animate-left">
               <h2>About Us</h2>
             </div>
-            <div className="col-8">
+            <div className="col-8 animate-right">
               <h3>With Us, Nothing’s Off The Menu.</h3>
               <p>
                 We all love FOOD. The phrase ‘Delicious FOOD’ is enough to
@@ -31,7 +31,7 @@ const AboutUs = () => {
                 regions in India. We don't just sell products... We service our
                 customers!
               </p>
-              <button className="btn btn-primary my-button">Read More</button>
+              <button className="btn btn-danger border border-danger my-button">Read More</button>
             </div>
           </div>
         </div>

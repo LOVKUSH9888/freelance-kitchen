@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <>
       <div className="container p-5 ">
-        <div className="row bg-dark text-white">
+        <div className="row ">
           <h1>Services</h1>
           <div id="cards_landscape_wrap-2">
             <div className="container">

@@ -1,45 +1,43 @@
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 // import { Container, Row, Col } from 'react-bootstrap';
 
 const Design = () => {
   return (
     <>
-    <div className="bg-dark text-white p-5">
+      <div className="bg-dark text-white p-5">
         <div className="container">
           <div className="row">
             <div className="col-4">
               <h2>Design</h2>
             </div>
             <div className="col-8">
-              <h3>With Us, Nothing’s Off The Menu.</h3>
               <p>
-                We all love FOOD. The phrase ‘Delicious FOOD’ is enough to
-                connect us to this industry of Commercial Kitchen. We Design
-                Commercial Kitchen Equipment’s and undertake complete
-                commissioning and setup of Commercial Kitchens for hotels,
-                restaurants, hospitals, food courts, educational institutions,
-                industrial canteens, take away joints, bar, lounges, cafes and
-                other food service or food serving outlets.
+                We understand the importance of design in a uniquely challenging
+                industry and our progressive work and ideals are evident in our
+                multi-award-winning projects. Using the latest CAD software, we
+                offer in-house 3D renders and modelling to enable the full
+                details of the project to be realised with our customers at all
+                stages of the design.
               </p>
-              <br />
+
               <p>
-                We Design all products and serve all our customers across North
-                India and the Middle East. We have a team of engineers and
-                professionals who design and define the exact dimensions using
-                the latest Computer Aided Design Systems to give you a flawless
-                product. We continuously work with our customers to give the
-                best possible products and the best price possible in different
-                regions in India. We don't just sell products... We service our
-                customers!
+                We know how crucial the ergonomics of your kitchen are to your
+                service and how the kitchen design is a significant contributor
+                to your efficiency and brigade well-being.
               </p>
-              <button className="btn btn-primary my-button">Read More</button>
+              <p>
+                We will work with you to design a solution that meets all of
+                your operational needs whilst keeping a focus on sustainability
+                and environmental impact. Contact us to book a complimentary
+                design consultation.
+              </p>
+              <button className="btn btn-danger border border-danger my-button">Read More</button>
             </div>
           </div>
         </div>
       </div>
-  </>
-  
+    </>
   );
 };
 

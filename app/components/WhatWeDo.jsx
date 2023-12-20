@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const WhatWeDo = () => {
   return (
-    <div className="container bg-dark text-white">
+    <div className="container">
       <div className="row">
       <h1>What We Do?</h1>
-        <h3>From Design To Installation</h3>
+        <h3 className="border-bottom bg-opacity-100">From Design To Installation</h3>
         {/* Cards */}
         <div id="cards_landscape_wrap-2">
           <div className="container">

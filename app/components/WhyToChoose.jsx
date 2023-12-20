@@ -11,20 +11,20 @@ const WhyToChoose = () => {
             </div>
             <div className="col-8">
               <p>
-                Diverse Portfolio: From pop-up eateries to renowned
+                <b>Diverse Portfolio:</b> From pop-up eateries to renowned
                 Michelin-starred restaurants, our diverse portfolio showcases
                 our adaptability and expertise in catering to the unique needs
                 of our clients.
               </p>
 
               <p>
-                Unique Solutions: We don't believe in one-size-fits-all
+                <b>Unique Solutions:</b> We don't believe in one-size-fits-all
                 solutions. Our team thrives on creating bespoke, tailor-made
                 solutions that elevate your kitchen and hospitality spaces to
                 new heights.
               </p>
               <p>
-                Passion for Perfection: Our passion for perfection is evident in
+                <b>Passion for Perfection:</b> Our passion for perfection is evident in
                 every project we undertake. We don't just build kitchens; we
                 create environments that inspire culinary excellence.
               </p>
