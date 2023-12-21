@@ -3,6 +3,7 @@ import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
 import Design from "./components/Design";
 import Footer from "./components/Footer";
+import GoogleLoc from "./components/GoogleLoc";
 import NavbarPage from "./components/NavbarPage";
 import Services from "./components/Services";
 import Values from "./components/Values";
@@ -27,8 +28,11 @@ export default function Home() {
       <WhatWeDo/>
       {/* Why to choose Us */}
       <WhyToChoose/>
-      {/* Footer */}
+      {/* Contact Us */}
       <ContactUs/>
+      {/* Goodleloc */}
+      <GoogleLoc/>
+      {/* Footer */}
       <Footer/>
     </>
   );
