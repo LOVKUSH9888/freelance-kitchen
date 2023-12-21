@@ -1,11 +1,12 @@
 import React from "react";
 import Image from "next/image";
 // import { Container, Row, Col } from 'react-bootstrap';
+import "./Design.css"
 
 const Design = () => {
   return (
     <>
-      <div className="bg-dark text-white p-5">
+      <div className="love-bag text-white p-5">
         <div className="container">
           <div className="row">
             <div className="col-4">
@@ -32,7 +33,7 @@ const Design = () => {
                 and environmental impact. Contact us to book a complimentary
                 design consultation.
               </p>
-              <button className="btn btn-danger border border-danger my-button">Read More</button>
+              <button className="btn btn-light my-button">Read More</button>
             </div>
           </div>
         </div>

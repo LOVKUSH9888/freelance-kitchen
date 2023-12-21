@@ -1,9 +1,10 @@
 import React from "react";
-
+import { CSSTransition } from "react-transition-group";
+import "./AboutUs.css"
 const WhyToChoose = () => {
   return (
     <>
-      <div className="bg-dark text-white p-5">
+      <div className="love-bag text-white p-5">
         <div className="container">
           <div className="row">
             <div className="col-4">

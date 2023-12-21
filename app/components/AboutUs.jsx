@@ -3,7 +3,7 @@ import "./AboutUs"
 const AboutUs = () => {
   return (
     <>
-      <div className="bg-success text-white p-5">
+      <div className="love-bag text-white p-5">
         <div className="container">
           <div className="row">
             <div className="col-4 animate-left">
@@ -31,7 +31,7 @@ const AboutUs = () => {
                 regions in India. We dont just sell products... We service our
                 customers!
               </p>
-              <button className="btn btn-danger border border-danger my-button">Read More</button>
+              <button className="btn btn-light my-button">Read More</button>
             </div>
           </div>
         </div>

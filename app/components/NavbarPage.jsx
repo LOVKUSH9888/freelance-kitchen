@@ -1,4 +1,3 @@
-// Import necessary modules and styles
 import Link from "next/link";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import Image from "next/image";
@@ -11,11 +10,7 @@ const NavbarPage = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 100) {
-        setScrolling(true);
-      } else {
-        setScrolling(false);
-      }
+      setScrolling(window.pageYOffset > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -42,13 +37,15 @@ const NavbarPage = () => {
         onToggle={handleNavbarToggle}
       >
         <Container>
-          <Navbar.Brand href="#"><Image
-            src="/logo.png"
-            alt="Picture of the author"
-            width={80}
-            height={50}
-            style={{ filter: "brightness(100%)" }} // Adjust the brightness value as needed
-          /></Navbar.Brand>
+          <Navbar.Brand href="#">
+            <Image
+              src="/logo.png"
+              alt="Picture of the author"
+              width={80}
+              height={50}
+              style={{ filter: "brightness(100%)" }}
+            />
+          </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="navbarNav"
             aria-expanded="false"
@@ -58,31 +55,41 @@ const NavbarPage = () => {
             <div className="mx-auto"></div>
             <Nav>
               <Nav.Link
-                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                className={
+                  scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
+                }
                 href="#"
               >
                 Home
               </Nav.Link>
               <Nav.Link
-                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                className={
+                  scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
+                }
                 href="#"
               >
                 About
               </Nav.Link>
               <Nav.Link
-                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                className={
+                  scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
+                }
                 href="#"
               >
                 Blog
               </Nav.Link>
               <Nav.Link
-                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                className={
+                  scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
+                }
                 href="#"
               >
                 Pricing
               </Nav.Link>
               <Nav.Link
-                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                className={
+                  scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
+                }
                 href="#"
               >
                 Contact
@@ -92,19 +99,35 @@ const NavbarPage = () => {
         </Container>
       </Navbar>
 
-      {/* Banner Image */}
-      <div className="banner-image relative" style={{ height: "100vh" }}>
-        <div className="absolute inset-0 flex justify-center items-center">
-          <Image
-            src="/hdimg.jpg"
-            alt="Picture of the author"
-            layout="fill" // Use fill layout to cover the container
-            objectFit="cover" // Ensure the image covers the container
-            style={{ filter: "brightness(25%)" }} // Adjust the brightness value as needed
-          />
-        </div>
-        <div className="relative z-10 text-center">
-          {/* Your content goes here */}
+      {/* Banner Image with Background Overlay */}
+      <div
+        className="banner-image position-relative"
+        style={{ height: "100vh", zIndex: -1 }}
+      >
+        <Image
+          src="/hdimg.jpg"
+          alt="Picture of the author"
+          layout="fill"
+          objectFit="cover"
+          style={{ filter: "brightness(50%)" }}
+        />
+        <div
+          className="overlay position-absolute w-100 h-100"
+          style={{ background: "rgba(0, 0, 0, 0.5)" }}
+        ></div>
+        <div className="d-flex flex-column align-items-center justify-content-center text-center position-absolute w-100 h-100">
+          <h1 className="text-white">RED commercial kitchens</h1>
+          <div className="d-flex flex-row">
+            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+              <h2>Design |</h2>
+            </Link>
+            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+              <h2>Sales |</h2>
+            </Link>
+            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+              <h2>Maintenance </h2>
+            </Link>
+          </div>
         </div>
       </div>
     </>

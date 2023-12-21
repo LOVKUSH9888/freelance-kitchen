@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer bg-dark">
+      <footer className="footer bg-success">
         <div className="footer-left col-md-4 col-sm-6">
           <p className="about">
             We Design all products and serve all our customers across North

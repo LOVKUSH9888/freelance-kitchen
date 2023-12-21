@@ -5,13 +5,13 @@ import Image from "next/image";
 const Services = () => {
   return (
     <>
-      <div className="container p-5 ">
+      <div className="container">
         <div className="row ">
-          <h1 className="border-bottom border-dark border-5"><b>Services</b></h1>
           <div id="cards_landscape_wrap-2">
-            <div className="container">
+            <div className="container p-2">
               <div className="row">
                 {/* Service 1 */}
+                <h1 className="border-bottom border-dark border-5"><b>Services</b></h1>
                 <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 d-flex flex-column">
                   <a href="">
                     <div className="card-flyer d-flex flex-column">
@@ -19,7 +19,7 @@ const Services = () => {
                         <div className="image-box">
                           <Image
                             className="img-fluid"
-                            src="/asset12.webp"
+                            src="/king.jpg"
                             width={500}
                             height={500}
                             alt="Image"
@@ -45,7 +45,7 @@ const Services = () => {
                         <div className="image-box">
                           <Image
                             className="img-fluid"
-                            src="/asset13.webp"
+                            src="/hdimg.jpg"
                             width={500}
                             height={500}
                             alt="Image"
@@ -57,7 +57,7 @@ const Services = () => {
                           </h6>
                           <p>
                             We provide a full supply service, with a wide range
-                            of products to suit your needs.
+                            of products to suit your best suit needs with out best engineers.
                           </p>
                         </div>
                       </div>
@@ -73,7 +73,7 @@ const Services = () => {
                         <div className="image-box">
                           <Image
                             className="img-fluid"
-                            src="/asset15.webp"
+                            src="/popli.jpg"
                             width={500}
                             height={500}
                             alt="Image"

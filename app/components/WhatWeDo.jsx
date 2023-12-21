@@ -4,14 +4,18 @@ import Image from "next/image";
 
 const WhatWeDo = () => {
   return (
-    <div className="container">
+    <div className="container mt-1">
       <div className="row">
-      <h1 className="border-bottom border-dark border-5 p-1"><b>What We Do?</b></h1>
-        <h3 className=""><b>From Design To Installation</b></h3>
         {/* Cards */}
         <div id="cards_landscape_wrap-2">
           <div className="container">
             <div className="row ">
+              <h1 className="border-bottom border-dark border-5">
+                <b>What We Do?</b>
+              </h1>
+              <h3 className="">
+                <b>From Design To Installation</b>
+              </h3>
               <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                 <a href="">
                   <div className="card-flyer">
@@ -92,7 +96,6 @@ const WhatWeDo = () => {
                   </div>
                 </a>
               </div>
-              
             </div>
           </div>
         </div>
