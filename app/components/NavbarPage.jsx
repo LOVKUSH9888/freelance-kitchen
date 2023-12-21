@@ -1,164 +1,112 @@
-"use client";
+// Import necessary modules and styles
 import Link from "next/link";
-import React, { useState } from "react";
-import { Navbar, Nav, Carousel, Container } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
+// NavbarPage component
 const NavbarPage = () => {
-  const [isNavbarExpanded, setNavbarExpanded] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+  const [isNavbarCollapsed, setNavbarCollapsed] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 100) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleNavbarToggle = () => {
-    setNavbarExpanded(!isNavbarExpanded);
+    setNavbarCollapsed(!isNavbarCollapsed);
   };
 
   return (
     <>
+      {/* Navbar */}
       <Navbar
-        bg={isNavbarExpanded ? "black" : "transparent"}
-        variant="dark"
-        expand="lg"
-        Remove
         fixed="top"
+        expand="lg"
+        variant="dark"
+        className={`p-md-3 ${
+          scrolling || !isNavbarCollapsed ? "bg-light shadow" : ""
+        }`}
+        onToggle={handleNavbarToggle}
       >
-        <Navbar.Brand href="#home" className="p-2">
-          <Image
+        <Container>
+          <Navbar.Brand href="#"><Image
             src="/logo.png"
-            width={85}
-            height={80}
             alt="Picture of the author"
+            width={80}
+            height={50}
+            style={{ filter: "brightness(100%)" }} // Adjust the brightness value as needed
+          /></Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={handleNavbarToggle}
-        />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto d-flex justify-content-end">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">About Us</Nav.Link>
-            <Nav.Link href="#about">Contact Us</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+          <Navbar.Collapse id="navbarNav">
+            <div className="mx-auto"></div>
+            <Nav>
+              <Nav.Link
+                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                href="#"
+              >
+                Home
+              </Nav.Link>
+              <Nav.Link
+                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                href="#"
+              >
+                About
+              </Nav.Link>
+              <Nav.Link
+                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                href="#"
+              >
+                Blog
+              </Nav.Link>
+              <Nav.Link
+                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                href="#"
+              >
+                Pricing
+              </Nav.Link>
+              <Nav.Link
+                className={scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"}
+                href="#"
+              >
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
 
-      <style jsx>{`
-        @keyframes slideInFromLeft {
-          0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-        }
-
-        .slide-in {
-          animation: slideInFromLeft 1s ease-in-out;
-        }
-      `}</style>
-
-      <Container fluid style={{ padding: 0, margin: 0, maxWidth: "100%" }}>
-        <Carousel>
-          <Carousel.Item style={{ height: "100vh" }}>
-            <Image
-              className="d-block w-100 h-100"
-              src="/asset5.webp"
-              alt="First slide"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="carousel-caption">
-              <h1 className="slide-in">RED commercial kitchens</h1>
-              <div className="container d-flex justify-content-center">
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Design |</h2>
-                </Link>
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Sales |</h2>
-                </Link>
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Maintenance</h2>
-                </Link>
-              </div>
-            </div>
-          </Carousel.Item>
-
-          <Carousel.Item style={{ height: "100vh" }}>
-            <Image
-              className="d-block w-100 h-100"
-              src="/asset4.png"
-              alt="Second slide"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="carousel-caption">
-            <h1 className="slide-in">RED commercial kitchens</h1>
-              <div className="container d-flex justify-content-center">
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Design |</h2>
-                </Link>
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Sales |</h2>
-                </Link>
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Maintenance</h2>
-                </Link>
-              </div>
-            </div>
-          </Carousel.Item>
-
-          <Carousel.Item style={{ height: "100vh" }}>
-            <Image
-              className="d-block w-100 h-100"
-              src="/asset7.webp"
-              alt="Third slide"
-              layout="fill"
-              objectFit="cover"
-            />
-            <div className="carousel-caption">
-            <h1 className="slide-in">RED commercial kitchens</h1>
-              <div className="container d-flex justify-content-center">
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Design |</h2>
-                </Link>
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Sales |</h2>
-                </Link>
-                <Link
-                  href="/"
-                  style={{ textDecoration: "none", color: "white" }}
-                >
-                  <h2 className="slide-in">Maintenance</h2>
-                </Link>
-              </div>
-            </div>
-          </Carousel.Item>
-          {/* Add more Carousel.Items with different images as needed */}
-        </Carousel>
-      </Container>
+      {/* Banner Image */}
+      <div className="banner-image relative" style={{ height: "100vh" }}>
+        <div className="absolute inset-0 flex justify-center items-center">
+          <Image
+            src="/hdimg.jpg"
+            alt="Picture of the author"
+            layout="fill" // Use fill layout to cover the container
+            objectFit="cover" // Ensure the image covers the container
+            style={{ filter: "brightness(25%)" }} // Adjust the brightness value as needed
+          />
+        </div>
+        <div className="relative z-10 text-center">
+          {/* Your content goes here */}
+        </div>
+      </div>
     </>
   );
 };

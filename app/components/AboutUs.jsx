@@ -3,7 +3,7 @@ import "./AboutUs"
 const AboutUs = () => {
   return (
     <>
-      <div className="bg-dark text-white p-5">
+      <div className="bg-success text-white p-5">
         <div className="container">
           <div className="row">
             <div className="col-4 animate-left">
