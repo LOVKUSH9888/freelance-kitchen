@@ -43,7 +43,6 @@ const NavbarPage = () => {
               alt="Picture of the author"
               width={80}
               height={50}
-              style={{ filter: "brightness(100%)" }}
             />
           </Navbar.Brand>
           <Navbar.Toggle
@@ -58,7 +57,7 @@ const NavbarPage = () => {
                 className={
                   scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
                 }
-                href="#"
+                href="/"
               >
                 Home
               </Nav.Link>
@@ -66,23 +65,23 @@ const NavbarPage = () => {
                 className={
                   scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
                 }
-                href="#"
+                href="/pages/about"
               >
-                About
+                About Us
               </Nav.Link>
               <Nav.Link
                 className={
                   scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
                 }
-                href="#"
+                href="/pages/services"
               >
-                Blog
+                Services
               </Nav.Link>
               <Nav.Link
                 className={
                   scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
                 }
-                href="#"
+                href="/pages/projects"
               >
                 Projects
               </Nav.Link>
@@ -90,9 +89,9 @@ const NavbarPage = () => {
                 className={
                   scrolling || !isNavbarCollapsed ? "text-dark" : "text-white"
                 }
-                href="#"
+                href="/pages/contact"
               >
-                Contact
+                Contact Us
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

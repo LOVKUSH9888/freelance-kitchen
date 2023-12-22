@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
             <div>
               <FaPhone size={iconSize} />
-              <h4>+1 123-456-7890</h4>
+              <h5>+1 123-456-7890</h5>
             </div>
             <div>
               <FaInstagram size={iconSize} /> <FaFacebook size={iconSize} />
@@ -44,11 +44,13 @@ const Footer = () => {
               />
             </div>
             <div>
-              <button className="fw-semibold btn btn-outline-primary my-button mt-3 m-3">
+              <button className="fw-semibold btn btn-outline-primary my-button mt-3 m-3 px-5">
                 Contact Us
               </button>
               <br />
-              <div className="">© All right reserved 2023. Red Engineers.</div>
+              <div className="">
+                <p>© All right reserved 2023. Red Engineers.</p>
+              </div>
             </div>
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5  text-center align-self-center">
