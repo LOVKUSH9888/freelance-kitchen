@@ -1,14 +1,22 @@
 import React from "react";
 import "./AboutUs";
+import Image from "next/image";
 const AboutUs = () => {
   return (
     <>
       <div className="love-bag text-dark p-5">
-        <div className="container fw-semibold">
+        <div className="container">
           <div className="row">
             <div className=" col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 animate-left">
               <h2>
                 <b>About Us</b>
+                <Image
+                  className="img-fluid border rounded"
+                  src="/asset13.webp"
+                  width={500}
+                  height={500}
+                  alt="Image"
+                />
               </h2>
             </div>
             <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 animate-right ">
@@ -32,7 +40,7 @@ const AboutUs = () => {
                 regions in India. We dont just sell products... We service our
                 customers!
               </p>
-              <button className="btn btn-light my-button fw-semibold">
+              <button className="btn btn-primary my-button fw-semibold">
                 Read More
               </button>
             </div>

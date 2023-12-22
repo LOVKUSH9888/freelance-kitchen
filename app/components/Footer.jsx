@@ -15,8 +15,8 @@ const Footer = () => {
   return (
     <>
       <div className="container-fluid p-0">
-        <div className="row love-bag text-dark p-5 fw-semibold text-center align-self-center">
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div className="row love-bag text-dark p-5 fw-semibold">
+          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-3 border border-dark rounded text-center align-self-center">
             <div>
               <FaEnvelope /> example@email.com
             </div>
@@ -37,20 +37,24 @@ const Footer = () => {
             <div>
               <Image
                 src="/logo.png"
-                width={90}
-                height={90}
+                width={120}
+                height={100}
                 alt="Picture of the author"
               />
             </div>
             <div>
-              <button className=" fw-semibold btn btn-light my-button mt-3">
+              <button className="fw-semibold btn btn-light my-button mt-3">
                 Contact Us
               </button>
             </div>
           </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5 border border-dark rounded text-center align-self-center">
             <FontAwesomeIcon icon="fa-solid fa-location-dot" />
-            <h4>Address Will be added later</h4>
+
+            <p>
+              <FaMapMarker /> Mackay Drafting, Suite 2/52 MacAlister St, Mackay
+              QLD 4740, Australia
+            </p>
           </div>
         </div>
       </div>

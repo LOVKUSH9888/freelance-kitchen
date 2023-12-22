@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./GoogleLoc.css"
+import "./GoogleLoc.css";
 
 const GoogleLoc = () => {
   const [formData, setFormData] = useState({
@@ -36,8 +36,14 @@ const GoogleLoc = () => {
             ></iframe>
           </div>
           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-            <div className="bg-white border rounded shadow-sm p-4" style={{ height: "100%" }}>
-              <h1 className="text-center mb-4"> <b>Contact Us</b></h1>
+            <div
+              className="bg-white border rounded shadow-sm p-4"
+              style={{ height: "100%" }}
+            >
+              <h1 className="text-center mb-4">
+                {" "}
+                <b>Contact Us</b>
+              </h1>
               <form onSubmit={handleSubmit} style={{ height: "100%" }}>
                 <div className="mb-3">
                   <label htmlFor="fullname" className="form-label">
@@ -105,7 +111,10 @@ const GoogleLoc = () => {
                   ></textarea>
                 </div>
                 <div className="d-grid">
-                  <button className="btn love-bag btn-lg text-white" type="submit">
+                  <button
+                    className="btn love-bag btn-lg text-white"
+                    type="submit"
+                  >
                     Submit
                   </button>
                 </div>
