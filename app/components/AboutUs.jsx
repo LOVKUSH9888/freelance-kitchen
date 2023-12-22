@@ -40,7 +40,7 @@ const AboutUs = () => {
                 regions in India. We dont just sell products... We service our
                 customers!
               </p>
-              <button className="btn btn-primary my-button fw-semibold">
+              <button className="fw-semibold btn btn-outline-primary my-button">
                 Read More
               </button>
             </div>

@@ -13,22 +13,25 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
+  const iconSize = 30; // Set the desired size for the icons
+
   return (
     <>
-      <div className="container-fluid p-0 border border-3">
+      <div className="container-fluid p-0 border border-3 border-dark border-bottom-0">
         <div className="row love-bag text-dark p-5 fw-semibold">
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-3 border border-dark rounded align-self-center">
+          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-3 align-self-center">
             <div>
-              <FaEnvelope />
-              <h4> example@email.com</h4>
+              <FaEnvelope size={iconSize} />
+              <h5> info@mackaydraft.com.au</h5>
             </div>
             <div>
-              <FaPhone />
+              <FaPhone size={iconSize} />
               <h4>+1 123-456-7890</h4>
             </div>
             <div>
-              <FaInstagram /> <FaFacebook />
-              <FaTwitter /><FaLinkedinIn/>
+              <FaInstagram size={iconSize} /> <FaFacebook size={iconSize} />
+              <FaTwitter size={iconSize} />
+              <FaLinkedinIn size={iconSize} />
             </div>
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center align-self-center">
@@ -41,17 +44,22 @@ const Footer = () => {
               />
             </div>
             <div>
-              <button className="fw-semibold btn btn-light my-button mt-3">
+              <button className="fw-semibold btn btn-outline-primary my-button mt-3 m-3">
                 Contact Us
               </button>
+              <br />
+              <div className="">© All right reserved 2023. Red Engineers.</div>
             </div>
           </div>
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5 border border-dark rounded text-center align-self-center">
-            <FontAwesomeIcon icon="fa-solid fa-location-dot" />
+          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5  text-center align-self-center">
+            <FontAwesomeIcon icon="fa-solid fa-location-dot" size={iconSize} />
 
             <p>
-              <FaMapMarker /> Mackay Drafting, Suite 2/52 MacAlister St, Mackay
-              QLD 4740, Australia
+              <FaMapMarker size={iconSize} />{" "}
+              <h5>
+                Mackay Drafting, Suite 2/52 MacAlister St, Mackay QLD 4740,
+                Australia{" "}
+              </h5>
             </p>
           </div>
         </div>

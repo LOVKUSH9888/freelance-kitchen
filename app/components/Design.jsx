@@ -43,7 +43,7 @@ const Design = () => {
                 and environmental impact. Contact us to book a complimentary
                 design consultation.
               </p>
-              <button className="btn btn-primary my-button fw-semibold">
+              <button className="fw-semibold btn btn-outline-primary my-button">
                 Read More
               </button>
               </div>

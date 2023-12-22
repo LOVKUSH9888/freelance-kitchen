@@ -1,6 +1,5 @@
 "use client";
 import AboutUs from "./components/AboutUs";
-import ContactUs from "./components/ContactUs";
 import Design from "./components/Design";
 import Footer from "./components/Footer";
 import GoogleLoc from "./components/GoogleLoc";
@@ -23,17 +22,15 @@ export default function Home() {
       {/* Design */}
       <Design />
       {/* Services */}
-      <Services/>
+      <Services />
       {/* WhatWeDo */}
-      <WhatWeDo/>
+      <WhatWeDo />
       {/* Why to choose Us */}
-      <WhyToChoose/>
-      {/* Contact Us */}
-      <ContactUs/>
+      <WhyToChoose />
       {/* Goodleloc */}
-      <GoogleLoc/>
+      <GoogleLoc />
       {/* Footer */}
-      <Footer/>
+      <Footer />
     </>
   );
 }
