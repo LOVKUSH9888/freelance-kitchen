@@ -24,7 +24,7 @@ const GoogleLoc = () => {
     <>
       <div className="container-fluid p-3">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d476319.2283265184!2d149.182889!3d-21.142687!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bdbd3e876fe59a5%3A0x3985c1e58b28b394!2sMackay%20Drafting!5e0!3m2!1sen!2sus!4v1703159369904!5m2!1sen!2sus"
               width="100%"
@@ -35,7 +35,7 @@ const GoogleLoc = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="col-md-6">
+          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
             <div className="bg-white border rounded shadow-sm p-4" style={{ height: "100%" }}>
               <h1 className="text-center mb-4"> <b>Contact Us</b></h1>
               <form onSubmit={handleSubmit} style={{ height: "100%" }}>

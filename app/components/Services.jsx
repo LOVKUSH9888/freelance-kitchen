@@ -5,7 +5,7 @@ import Image from "next/image";
 const Services = () => {
   return (
     <>
-      <div className="container">
+      <div className="container fw-semibold">
         <div className="row ">
           <div id="cards_landscape_wrap-2">
             <div className="container p-2">
@@ -57,7 +57,7 @@ const Services = () => {
                           </h6>
                           <p>
                             We provide a full supply service, with a wide range
-                            of products to suit your best suit needs with out best engineers.
+                            of products to suit your needs with engineers.
                           </p>
                         </div>
                       </div>
@@ -110,8 +110,7 @@ const Services = () => {
                           <h6>Project Management</h6>
                           <p>
                             Our project managers are on hand to help every step
-                            of the way, from design, to installation and through
-                            to completion with the expertise.
+                            of the way, from design, to installation and complete with the best suited  experts.
                           </p>
                         </div>
                       </div>

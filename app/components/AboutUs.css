@@ -1,4 +1,21 @@
-.love-bag{
-    
-    background: rgb(10,21,31);
-background: linear-gradient(90deg, rgba(10,21,31,1) 29%, rgba(99,110,107,1) 100%, rgba(255,253,253,1) 100%);}
+.love-bag {
+  background: rgb(119, 204, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 204, 221, 1) 0%,
+    rgba(228, 228, 228, 1) 0%,
+    rgba(138, 138, 156, 1) 100%
+  );
+}
+
+.my-button:hover {
+  background: rgb(119, 204, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(119, 204, 221, 1) 0%,
+    rgba(228, 228, 228, 1) 0%,
+    rgba(138, 138, 156, 1) 100%
+  );
+  filter: brightness(0.8); /* Add a shade effect on hover */
+  color: white;
+}

@@ -6,13 +6,13 @@ import "./Design.css"
 const Design = () => {
   return (
     <>
-      <div className="love-bag text-white p-5">
+      <div className="love-bag text-dark p-5 fw-semibold">
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
               <h2><b>Design</b></h2>
             </div>
-            <div className="col-8">
+            <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
               <p>
                 We understand the importance of design in a uniquely challenging
                 industry and our progressive work and ideals are evident in our
@@ -33,7 +33,7 @@ const Design = () => {
                 and environmental impact. Contact us to book a complimentary
                 design consultation.
               </p>
-              <button className="btn btn-light my-button">Read More</button>
+              <button className="btn btn-light my-button fw-semibold">Read More</button>
             </div>
           </div>
         </div>

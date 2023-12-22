@@ -9,14 +9,14 @@ const Values = () => {
         className="lovebag"
         style={{
           backgroundImage:
-            'url("https://erpnews.com/v2/wp-content/uploads/2021/11/chef-garnishing-food-at-commercial-kitchen-counter-2021-08-28-23-55-23-utc.jpg")',
+            'url("https://img.freepik.com/free-photo/self-service-restaurant_93675-130913.jpg?w=996&t=st=1703229372~exp=1703229972~hmac=a800126b36b212fbeada572bb49d07975d4e7eebbda415d1071c5583ef29db0f")',
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="container-fluid p-5">
-          <div className="row d-flex align-items-center text-white">
-            <div className="col-md-6">
+        <div className="container-fluid p-5 fw-semibold text-dark">
+          <div className="row d-flex align-items-center ">
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
               <div className="love-bag p-3 bg-opacity-75 rounded">
               <h2>
                 <b>Our Core Values</b>
@@ -41,12 +41,12 @@ const Values = () => {
                 you to understand your unique requirements, ensuring that our
                 solutions align perfectly with your vision and goals.
               </p>
-              <button className="btn btn-light my-button">
+              <button className="btn btn-light my-button fw-semibold">
                 Read More
               </button>
               </div>
             </div>
-            <div className="col-md-6"></div>
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12"></div>
           </div>
         </div>
       </div>

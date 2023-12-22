@@ -4,13 +4,13 @@ import "./AboutUs.css"
 const WhyToChoose = () => {
   return (
     <>
-      <div className="love-bag text-white p-5">
+      <div className="love-bag text-dark p-5 fw-semibold">
         <div className="container">
           <div className="row">
-            <div className="col-4">
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
               <h2><b>Why Choose US?</b></h2>
             </div>
-            <div className="col-8">
+            <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
               <p>
                 <b>Diverse Portfolio:</b> From pop-up eateries to renowned
                 Michelin-starred restaurants, our diverse portfolio showcases

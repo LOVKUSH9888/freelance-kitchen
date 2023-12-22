@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const WhatWeDo = () => {
   return (
-    <div className="container mt-1">
+    <div className="container mt-1 fw-semibold">
       <div className="row">
         {/* Cards */}
         <div id="cards_landscape_wrap-2">

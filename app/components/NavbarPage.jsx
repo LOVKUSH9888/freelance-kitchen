@@ -84,7 +84,7 @@ const NavbarPage = () => {
                 }
                 href="#"
               >
-                Pricing
+                Projects
               </Nav.Link>
               <Nav.Link
                 className={
