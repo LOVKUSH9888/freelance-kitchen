@@ -22,6 +22,7 @@ const Design = () => {
               />
             </div>
             <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12">
+              <div className="mt-5">
               <p>
                 We understand the importance of design in a uniquely challenging
                 industry and our progressive work and ideals are evident in our
@@ -45,6 +46,7 @@ const Design = () => {
               <button className="btn btn-primary my-button fw-semibold">
                 Read More
               </button>
+              </div>
             </div>
           </div>
         </div>

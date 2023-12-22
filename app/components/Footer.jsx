@@ -8,29 +8,27 @@ import {
   FaFacebook,
   FaTwitter,
   FaMapMarker,
+  FaLinkedinIn,
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
     <>
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 border border-3">
         <div className="row love-bag text-dark p-5 fw-semibold">
-          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-3 border border-dark rounded text-center align-self-center">
+          <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-3 border border-dark rounded align-self-center">
             <div>
-              <FaEnvelope /> example@email.com
+              <FaEnvelope />
+              <h4> example@email.com</h4>
             </div>
             <div>
-              <FaPhone /> +1 123-456-7890
+              <FaPhone />
+              <h4>+1 123-456-7890</h4>
             </div>
             <div>
-              <FaInstagram /> Instagram
-            </div>
-            <div>
-              <FaFacebook /> Facebook
-            </div>
-            <div>
-              <FaTwitter /> Twitter
+              <FaInstagram /> <FaFacebook />
+              <FaTwitter /><FaLinkedinIn/>
             </div>
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 text-center align-self-center">
