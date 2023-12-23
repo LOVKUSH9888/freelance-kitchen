@@ -3,7 +3,7 @@ import "./Values.css";
 
 // Provide the online link for the background image
 const backgroundImageUrl =
-  "https://www.samtell.com/hubfs/Webpage%20Assets/SamTell_DBS_Design1.jpg";
+  "https://www.samtell.com/hubfs/Webpage%20Assets/SamTell_DBS_Supply1.jpg";
 
 const Values = () => {
   return (
@@ -15,7 +15,7 @@ const Values = () => {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          minHeight: "60vh", // Adjust as needed
+          minHeight: "40vh", // Adjust as needed
         }}
       >
         {/* Your content goes here */}

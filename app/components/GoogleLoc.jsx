@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./GoogleLoc.css";
+import { IoIosMail } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdMessage } from "react-icons/md";
+import { MdPerson } from "react-icons/md";
 
 const GoogleLoc = () => {
   const [formData, setFormData] = useState({
@@ -47,7 +51,8 @@ const GoogleLoc = () => {
               <form onSubmit={handleSubmit} style={{ height: "100%" }}>
                 <div className="mb-3">
                   <label htmlFor="fullname" className="form-label">
-                    Full Name <span className="text-danger">*</span>
+                    <MdPerson /> Full Name{" "}
+                    <span className="text-danger">*</span>
                   </label>
                   <input
                     type="text"
@@ -61,7 +66,7 @@ const GoogleLoc = () => {
                 </div>
                 <div className="mb-3">
                   <label htmlFor="email" className="form-label">
-                    Email <span className="text-danger">*</span>
+                    <IoIosMail /> Email <span className="text-danger">*</span>
                   </label>
                   <div className="input-group">
                     <span className="input-group-text">
@@ -80,7 +85,7 @@ const GoogleLoc = () => {
                 </div>
                 <div className="mb-3">
                   <label htmlFor="phone" className="form-label">
-                    Phone Number
+                    <FaPhoneAlt /> Phone Number
                   </label>
                   <div className="input-group">
                     <span className="input-group-text">
@@ -98,7 +103,7 @@ const GoogleLoc = () => {
                 </div>
                 <div className="mb-3">
                   <label htmlFor="message" className="form-label">
-                    Message <span className="text-danger">*</span>
+                    <MdMessage /> Message <span className="text-danger">*</span>
                   </label>
                   <textarea
                     className="form-control"
@@ -112,7 +117,7 @@ const GoogleLoc = () => {
                 </div>
                 <div className="d-grid">
                   <button
-                    className="btn love-bag btn-lg text-white"
+                    className="fw-semibold btn btn-dark my-button"
                     type="submit"
                   >
                     Submit

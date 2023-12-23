@@ -31,14 +31,13 @@ const AboutUs = () => {
                 serving outlets.
               </p>
               <p>
-                We Design all products and serve all our customers across North
-                India and the Middle East. We have a team of engineers and
+                We Design all products and serve all our customers across Australia. We have a team of engineers and
                 professionals who design and define the exact dimensions using
                 the latest Computer Aided Design Systems to give you a flawless
                 product. We continuously work with our customers to give the
                 best possible products and the best price possible in different
-                regions in India. We dont just sell products... We service our
-                customers!
+                regions in India. We dont just sell products... 
+                <p>We service our customers!</p>
               </p>
               <button className="fw-semibold btn btn-outline-primary my-button">
                 Read More

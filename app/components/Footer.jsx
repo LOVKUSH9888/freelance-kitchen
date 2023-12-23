@@ -7,9 +7,9 @@ import {
   FaInstagram,
   FaFacebook,
   FaTwitter,
-  FaMapMarker,
   FaLinkedinIn,
 } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
@@ -57,7 +57,7 @@ const Footer = () => {
             <FontAwesomeIcon icon="fa-solid fa-location-dot" size={iconSize} />
 
             <p>
-              <FaMapMarker size={iconSize} />{" "}
+              <FaLocationDot size={iconSize} />{" "}
               <h5>
                 Mackay Drafting, Suite 2/52 MacAlister St, Mackay QLD 4740,
                 Australia{" "}

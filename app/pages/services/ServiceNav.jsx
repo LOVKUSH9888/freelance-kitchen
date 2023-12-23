@@ -4,8 +4,8 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-// NavbarPage component
-const NavbarPage = () => {
+// ServiceNav component
+const ServiceNav = () => {
   const [scrolling, setScrolling] = useState(false);
   const [isNavbarCollapsed, setNavbarCollapsed] = useState(true);
 
@@ -102,10 +102,10 @@ const NavbarPage = () => {
       {/* Banner Image with Background Overlay */}
       <div
         className="banner-image position-relative"
-        style={{ height: "100vh", zIndex: -1 }}
+        style={{ height: "50vh", zIndex: -1 }}
       >
         <Image
-          src="/hdimg.jpg"
+          src="/asset15.webp"
           alt="Picture of the author"
           layout="fill"
           objectFit="cover"
@@ -116,17 +116,8 @@ const NavbarPage = () => {
           style={{ background: "rgba(0, 0, 0, 0.5)" }}
         ></div>
         <div className="d-flex flex-column align-items-center justify-content-center text-center position-absolute w-100 h-100">
-          <h1 className="text-white">RED commercial kitchens</h1>
+          <h1 className="text-white">Services</h1>
           <div className="d-flex flex-row">
-            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
-              <h2>Design |</h2>
-            </Link>
-            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
-              <h2>Sales |</h2>
-            </Link>
-            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
-              <h2>Maintenance </h2>
-            </Link>
           </div>
         </div>
       </div>
@@ -134,4 +125,4 @@ const NavbarPage = () => {
   );
 };
 
-export default NavbarPage;
+export default ServiceNav;
