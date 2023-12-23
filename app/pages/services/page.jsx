@@ -1,4 +1,4 @@
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/Footer/Footer";
 import ServiceNav from "./ServiceNav";
 import React from "react";
 import Body from "./Body";

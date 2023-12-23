@@ -1,10 +1,10 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-@@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /* Global Styles */
-*, body  {
+body  {
   font-family: "Poppins", sans-serif;
-
+  background-color: #FFF;
   margin: 0;
   padding: 0;
   overflow-x: hidden;

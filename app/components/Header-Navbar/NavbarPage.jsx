@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Nav, Navbar } from "react-bootstrap";
 
-const ServiceNav = () => {
+const NavbarPage = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const handleNavbarToggle = () => {
@@ -50,7 +50,7 @@ const ServiceNav = () => {
           style={{ background: "rgba(0, 0, 0, 0.5)" }}
         ></div>
         <div className="d-flex flex-column align-items-center justify-content-center text-center position-absolute w-100 h-100">
-          <h1 className="text-white">RED commercial kitchens</h1>
+          <h4 className="text-white">RED commercial kitchens</h4>
           <div className="d-flex flex-row">
             <Link href="/" style={{ textDecoration: "none", color: "white" }}>
               Design | Sales | Maintenance
@@ -63,4 +63,4 @@ const ServiceNav = () => {
   );
 };
 
-export default ServiceNav;
+export default NavbarPage;

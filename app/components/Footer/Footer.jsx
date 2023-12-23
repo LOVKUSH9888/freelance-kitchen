@@ -9,7 +9,6 @@ import {
   FaTwitter,
   FaLinkedinIn,
 } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
@@ -17,8 +16,8 @@ const Footer = () => {
 
   return (
     <>
-      <div className="container-fluid p-0 border border-3 border-dark border-bottom-0">
-        <div className="row love-bag text-dark p-5 fw-semibold">
+      <div className="container-fluid p-0 border-top mt-2 border-3 border-dark">
+        <div className="row love-bag text-dark p-3 fw-semibold">
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-3 align-self-center">
             <div>
               <FaEnvelope size={iconSize} />
@@ -44,7 +43,7 @@ const Footer = () => {
               />
             </div>
             <div>
-              <button className="fw-semibold btn btn-outline-primary my-button mt-3 m-3 px-5">
+              <button className="fw-semibold btn btn-outline-dark my-button mt-3 m-3 px-5">
                 Contact Us
               </button>
               <br />
@@ -54,15 +53,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 p-5  text-center align-self-center">
-            <FontAwesomeIcon icon="fa-solid fa-location-dot" size={iconSize} />
-
-            <p>
-              <FaLocationDot size={iconSize} />{" "}
-              <h5>
-                Mackay Drafting, Suite 2/52 MacAlister St, Mackay QLD 4740,
-                Australia{" "}
-              </h5>
-            </p>
+            <h5>
+              Mackay Drafting, Suite 2/52 MacAlister St, Mackay QLD 4740,
+              Australia
+            </h5>
           </div>
         </div>
       </div>

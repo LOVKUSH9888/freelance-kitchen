@@ -1,5 +1,6 @@
+"use client"
 import React, { useState } from "react";
-import "./GoogleLoc.css";
+
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMessage } from "react-icons/md";

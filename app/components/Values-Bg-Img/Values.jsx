@@ -1,5 +1,5 @@
 import React from "react";
-import "./Values.css";
+
 
 // Provide the online link for the background image
 const backgroundImageUrl =
