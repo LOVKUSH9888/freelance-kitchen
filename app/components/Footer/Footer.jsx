@@ -48,7 +48,7 @@ const Footer = () => {
               </button>
               <br />
               <div className="">
-                <p>© All right reserved 2023. Red Engineers.</p>
+                <p>© All right reserved 2023. RED commercial kitchens</p>
               </div>
             </div>
           </div>
