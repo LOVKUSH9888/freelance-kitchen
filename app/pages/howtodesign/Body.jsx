@@ -17,7 +17,7 @@ const Body = () => {
             A strong design will make your kitchen run smoothly and efficiently,
             so everything must be planned long before you open your restaurant.
             Everyone knows you need great staff, solid equipment and a chef who
-            knows what they're doing but a vital part of your operation is the
+            knows what they are doing but a vital part of your operation is the
             design of your commercial kitchen.
           </p>
           <p>
@@ -54,8 +54,8 @@ const Body = () => {
             </li>
           </ol>
           <p>
-            It's around these five stations you must base your kitchen design,
-            and it's essential that your kitchen flows. Kitchen workers need
+            Its around these five stations you must base your kitchen design,
+            and its essential that your kitchen flows. Kitchen workers need
             space to move and easy access to most-used points, such as a sink.
           </p>
         </div>
@@ -836,7 +836,7 @@ const Body = () => {
           The necessity for good lighting in your kitchen is obvious. However
           there are many things to consider to make sure you have right level of
           light; for example, your kitchen should be free from glare and
-          reflections. You'll also need to make sure you choose the right bulb.
+          reflections. You will also need to make sure you choose the right bulb.
         </p>
       </div>
       <div className="row">
