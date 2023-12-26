@@ -11,7 +11,7 @@ const AboutUs = () => {
                 <b>About Us</b>
                 <Image
                   className="img-fluid border rounded"
-                  src="/asset13.webp"
+                  src="/aboutjpg.jpg"
                   width={500}
                   height={500}
                   alt="Image"

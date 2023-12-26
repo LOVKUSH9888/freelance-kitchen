@@ -30,7 +30,7 @@ const NavbarPage = () => {
           <Nav className="mr-auto d-flex text-center align-item-center">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/pages/about">About Us</Nav.Link>
-            <Nav.Link href="/pages/services">Services</Nav.Link>
+            <Nav.Link href="/pages/howtodesign">How To Design</Nav.Link>
             <Nav.Link href="/pages/projects">Projects</Nav.Link>
             <Nav.Link href="/pages/contact">Contact Us</Nav.Link>
           </Nav>

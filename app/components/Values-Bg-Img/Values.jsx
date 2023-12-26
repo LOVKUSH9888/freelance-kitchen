@@ -1,9 +1,8 @@
 import React from "react";
 
-
 // Provide the online link for the background image
 const backgroundImageUrl =
-  "https://www.samtell.com/hubfs/Webpage%20Assets/SamTell_DBS_Supply1.jpg";
+  "https://dolargroup.com/wp-content/themes/dolarnew/imgs/Project.jpg";
 
 const Values = () => {
   return (

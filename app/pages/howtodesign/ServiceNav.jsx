@@ -30,14 +30,14 @@ const ServiceNav = () => {
           <Nav className="mr-auto d-flex text-center align-item-center">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/pages/about">About Us</Nav.Link>
-            <Nav.Link href="/pages/services">Services</Nav.Link>
+            <Nav.Link href="/pages/services">How To Design</Nav.Link>
             <Nav.Link href="/pages/projects">Projects</Nav.Link>
             <Nav.Link href="/pages/contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       {/* Banner Image with Background Overlay */}
-      <div className="banner-image position-relative" style={{ height: "100vh", zIndex: -1 }}>
+      <div className="banner-image position-relative" style={{ height: "60vh", zIndex: -1 }}>
         <Image
           src="/hdimg.jpg"
           alt="Picture of the author"
@@ -50,10 +50,10 @@ const ServiceNav = () => {
           style={{ background: "rgba(0, 0, 0, 0.5)" }}
         ></div>
         <div className="d-flex flex-column align-items-center justify-content-center text-center position-absolute w-100 h-100">
-          <h1 className="text-white">RED commercial kitchens</h1>
+          <h1 className="text-white">How To Design</h1>
           <div className="d-flex flex-row">
             <Link href="/" style={{ textDecoration: "none", color: "white" }}>
-              Design | Sales | Maintenance
+              
             </Link>
             {/* ... other Link components */}
           </div>
