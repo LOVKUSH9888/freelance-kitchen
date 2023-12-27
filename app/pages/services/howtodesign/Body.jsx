@@ -3,10 +3,16 @@ import Image from "next/image";
 import React from "react";
 import "./Body.css";
 import Accordion from "react-bootstrap/Accordion";
+import { Breadcrumb } from "react-bootstrap";
 
 const Body = () => {
   return (
     <div className="container p-3 lovefirstrow">
+      <Breadcrumb>
+        <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="/pages/services">Services</Breadcrumb.Item>
+        <Breadcrumb.Item active>How To Design</Breadcrumb.Item>
+      </Breadcrumb>
       <div className="row ">
         <div className="col">
           <h3>
@@ -836,7 +842,8 @@ const Body = () => {
           The necessity for good lighting in your kitchen is obvious. However
           there are many things to consider to make sure you have right level of
           light; for example, your kitchen should be free from glare and
-          reflections. You will also need to make sure you choose the right bulb.
+          reflections. You will also need to make sure you choose the right
+          bulb.
         </p>
       </div>
       <div className="row">
@@ -955,6 +962,138 @@ const Body = () => {
             Its important to remember that the junction of floor and wall
             surfaces can be a hot bed for contamination due to grease and dirt.
             Consider coving the junction to make it easier to clean.
+          </p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <h3>
+            <b>FIRE SAFETY, ACCESS AND FIRST AID</b>
+          </h3>
+          <h6>
+            <b>Fire Safety</b>
+          </h6>
+          <p>
+            Fire hazards are real and every precaution should be taken to
+            prevent fires and contain them when they do break out. It’s vital to
+            make sure you take health and safety seriously.
+          </p>
+          <p>
+            The most common cause of serious fires in commercial kitchens is
+            over-heating of deep fryer oil. Therefore it is recommended that all
+            extinguishers and blankets are suitable for hot oil fires and that
+            they are serviced regularly by a licensed engineer.
+          </p>
+          <p>
+            There is no set number in terms of how many fire extinguishers are
+            needed as this depends on the size of your kitchen. They should be:
+          </p>
+          <ul>
+            <li>
+              <b>
+                Preferably placed near the exit route in a high-traffic area.
+              </b>
+            </li>
+            <li>
+              <b>Easy to access.</b>
+            </li>
+            <li>
+              <b>100mm high from the floor.</b>
+            </li>
+            <li>
+              <b>
+                Kept within 2 and 20m from risk of cooking oils and fats blazes
+                ideally within 10m.
+              </b>
+            </li>
+            <li>
+              <b>
+                Kept within 40m from appliances at risk of electrical fires.
+              </b>
+            </li>
+          </ul>
+          <p>
+            Fire blankets are only to be used to extinguish small cooking and
+            clothing fires. They must be either rectangular or square, with no
+            side bigger than 1.8m and no smaller than 0.9m, and weighing no more
+            than 10kg. It must be folded so that it can be opened in under four
+            seconds, and inspected (along with emergency lighting) every 12
+            months. They must be kept in an obvious and accessible place.
+            Generally, there should be one fire blanket per five fire hazards
+            within the same area.
+          </p>
+          <h6>
+            <b>Access</b>
+          </h6>
+          <p>
+            Your design must promote safe and convenient movement around the
+            workplace, access to all parts of the workplace and safe emergency
+            escape routes. You must use safety signs to make sure exits are free
+            from obstruction in case of emergency.
+          </p>
+          <p>
+            One exit is required if a space is small enough so that any one
+            point is a maximum 20m from an exit, otherwise two or more are
+            required which comply with building regulations.
+          </p>
+          <p>
+            The escape route must have 2000mm of space vertically and 1000mm
+            horizontally, aside from doorways. Ensure vehicles cannot block
+            exits, simply by placing suitable barriers.
+          </p>
+          <p>Emergency exits must lead to designated safety areas.</p>
+          <p>
+            Consider people with disabilities, ensuring safe and suitable access
+            where reasonable.
+          </p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-10">
+          <h6>
+            <b>First Aid</b>
+          </h6>
+          <p>
+            As per UK regulation, one basic first aid kit should be on site for
+            every 50 staff working at any one time. For 50 to 100 staff, an
+            occupational first aid kit is needed. Two kits are required if you
+            have more than 100 staff.
+          </p>
+          <p>
+            First aid kits should be kept in an obvious and accessible place,
+            ideally mounted on a wall. Kits must be on every level of a
+            multi-level kitchen.
+          </p>
+        </div>
+        <div className="col-2">
+          <Image
+            className="img-fluid border rounded"
+            src="/firstaid.png"
+            width={250}
+            height={200}
+            alt="Image"
+          />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col">
+          <h5>
+            <b>ONE SIZE DOES NOT FIT ALL</b>
+          </h5>
+          <p>
+            Of course, every kitchen is different and what works in one place
+            might not necessarily work in another.
+          </p>
+          <p>
+            Everything boils down to your individual circumstance the size and
+            style of your building, planning permission, budget (Nisbets does
+            offer a leasing option to keep start-up costs down), your menu and
+            local area demographic.
+          </p>
+          <p>
+            Ultimately, your kitchen may have its own specific requirements, but
+            this guide will get you on your way to a commercial kitchen design
+            that will work for you.
           </p>
         </div>
       </div>
