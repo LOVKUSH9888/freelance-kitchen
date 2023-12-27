@@ -1,10 +1,10 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, NavDropdown, Navbar } from "react-bootstrap";
 
-const ServiceNav = () => {
+const HowToDesignNavbar = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const handleNavbarToggle = () => {
@@ -25,19 +25,48 @@ const ServiceNav = () => {
         <Navbar.Brand href="/">
           <Image src="/logo.png" alt="Logo" width={80} height={80} />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={handleNavbarToggle} />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={handleNavbarToggle}
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto d-flex text-center align-item-center">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/pages/about">About Us</Nav.Link>
-            <Nav.Link href="/pages/services">How To Design</Nav.Link>
+            <NavDropdown title="Who we are" id="collasible-nav-dropdown">
+              <NavDropdown.Item
+                href="/pages/whoweare/about"
+                className="text-center"
+              >
+                About Us
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/pages/whoweare/ourprocess"
+                className="text-center"
+              >
+                Our Process
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Services" id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/pages/services" className="text-center">
+                Services
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/pages/services/howtodesign"
+                className="text-center"
+              >
+                How to Design
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link href="/pages/projects">Projects</Nav.Link>
             <Nav.Link href="/pages/contact">Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       {/* Banner Image with Background Overlay */}
-      <div className="banner-image position-relative" style={{ height: "60vh", zIndex: -1 }}>
+      <div
+        className="banner-image position-relative"
+        style={{ height: "60vh", zIndex: -1 }}
+      >
         <Image
           src="/hdimg.jpg"
           alt="Picture of the author"
@@ -50,17 +79,13 @@ const ServiceNav = () => {
           style={{ background: "rgba(0, 0, 0, 0.5)" }}
         ></div>
         <div className="d-flex flex-column align-items-center justify-content-center text-center position-absolute w-100 h-100">
-          <h1 className="text-white">How To Design</h1>
-          <div className="d-flex flex-row">
-            <Link href="/" style={{ textDecoration: "none", color: "white" }}>
-              
-            </Link>
-            {/* ... other Link components */}
-          </div>
+          <h1 className="text-white">
+            <b>How To Design</b>
+          </h1>
         </div>
       </div>
     </>
   );
 };
 
-export default ServiceNav;
+export default HowToDesignNavbar;

@@ -1,12 +1,12 @@
 import Footer from "@/app/components/Footer/Footer";
-import ServiceNav from "./ServiceNav";
 import React from "react";
 import Body from "./Body";
+import HowToDesignNavbar from "./HowToDesignNavbar";
 
 const Services = () => {
   return (
     <>
-      <ServiceNav />
+      <HowToDesignNavbar />
         <Body/>
       <Footer />
     </>
